@@ -17,30 +17,34 @@
   <body>
     <header class="page-header">
       <div class="container">
-        <a href="" class="logo">Web<span class="logo--black">Studio</span></a>
-        <nav class="page-header__nav">
-          <ul class="list-nav">
-            <li class="list-nav__item">
-              <a class="list-nav__link" href="index.html">Студія</a>
-            </li>
-            <li class="list-nav__item">
-              <a class="list-nav__link" href="portfolio.html">Портфоліо</a>
-            </li>
-            <li class="list-nav__item">
-              <a class="list-nav__link" href="#">Контакти</a>
-            </li>
-          </ul>
-          <ul class="list-feedback">
-            <li class="list-feedback__item">
-              <a href="" class="list-feedback__link"
+        <div class="page-header__block">
+          <a href="index.html" class="logo">Web<span class="logo--black">Studio</span></a>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item nav__item--emphasis">
+                <a class="nav__link nav__link--active nav__link--emphasis" href="index.html"
+                  >Студія</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="portfolio.html">Портфоліо</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="feedback">
+            <li class="feedback__item">
+              <a href="#" class="feedback__link"
                 ><svg class="icon icon-mail" width="16" height="12">
                   <use xlink:href="./images/sprite.svg#icon-mail"></use>
                 </svg>
                 info@devstudio.com</a
               >
             </li>
-            <li class="list-feedback__item">
-              <a href="" class="list-feedback__link"
+            <li class="feedback__item">
+              <a href="#" class="feedback__link"
                 ><svg class="icon icon-phone" width="10" height="16">
                   <use xlink:href="./images/sprite.svg#icon-phone"></use>
                 </svg>
@@ -48,7 +52,7 @@
               >
             </li>
           </ul>
-        </nav>
+        </div>
       </div>
     </header>
     <main>
@@ -58,44 +62,46 @@
             ЕФЕКТИВНІ РІШЕННЯ ДЛЯ <br />
             ВАШОГО БІЗНЕСУ
           </h1>
-          <button class="btn" type="button" data-modal-open>Замовити послугу</button>
+          <button class="btn btn__promo" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="section features">
         <div class="container">
-          <h2 class="features__title">Особливості</h2>
-          <ul class="features__list">
-            <li class="features__item feauter__satellite">
-              <h3 class="features__title">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="features__text">
-                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-              </p>
-            </li>
-            <li class="features__item feauter__clock">
-              <h3 class="features__title">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="features__text">
-                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
-              </p>
-            </li>
-            <li class="features__item feauter__diagram">
-              <h3 class="features__title">ПЛАНУВАННЯ</h3>
-              <p class="features__text">
-                Так само консультація з широким активом значною мірою зумовлює.
-              </p>
-            </li>
-            <li class="features__item feauter-astronaut">
-              <h3 class="features__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="features__text">
-                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
-              </p>
-            </li>
-          </ul>
+          <div class="feauter__box">
+            <h2 class="features__title">Особливості</h2>
+            <ul class="features__list">
+              <li class="features__item feauter__satellite">
+                <h3 class="features__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                <p class="features__text">
+                  Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+                </p>
+              </li>
+              <li class="features__item feauter__clock">
+                <h3 class="features__title">ПУНКТУАЛЬНІСТЬ</h3>
+                <p class="features__text">
+                  Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+                </p>
+              </li>
+              <li class="features__item feauter__diagram">
+                <h3 class="features__title">ПЛАНУВАННЯ</h3>
+                <p class="features__text">
+                  Так само консультація з широким активом значною мірою зумовлює.
+                </p>
+              </li>
+              <li class="features__item feauter__astronaut">
+                <h3 class="features__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                <p class="features__text">
+                  Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="section about">
         <div class="container">
-          <h2 class="about-title">Чим ми займаємося</h2>
-          <ul class="list-abouts">
+          <h2 class="about__title">Чим ми займаємося</h2>
+          <ul class="about__list">
             <li class="about__item">
               <img
                 src="./images/programer.jpg"
@@ -131,7 +137,7 @@
       </section>
       <section class="section team">
         <div class="container">
-          <h2 class="team__title">Наша команда</h2>
+          <h2 class="team__heading">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
               <img src="./images/designer.jpg" alt="Дизайнер продукту" width="270" height="260" />
@@ -139,28 +145,28 @@
                 <h3 class="team__title">Ігор Дем'яненко</h3>
                 <p class="team__text">Product Designer</p>
                 <ul class="icons">
-                  <li class="icons-list">
+                  <li class="icons__item">
                     <a href="#" class="icons__link" target="_blank" rel="noopener noreferrer">
                       <svg class="icon icon__page" width="20" height="20">
                         <use xlink:href="./images/sprite.svg#icon-instagram1"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="icons-list">
+                  <li class="icons__item">
                     <a href="#" class="icons__link" target="_blank" rel="noopener noreferrer">
                       <svg class="icon icon__page" width="20" height="20">
                         <use xlink:href="./images/sprite.svg#icon-twitter1"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="icons-list">
+                  <li class="icons__item">
                     <a href="#" class="icons__link" target="_blank" rel="noopener noreferrer">
                       <svg class="icon icon__page" width="20" height="20">
                         <use xlink:href="./images/sprite.svg#icon-facebook1"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="icons-list">
+                  <li class="icons__item">
                     <a href="#" class="icons__link" target="_blank" rel="noopener noreferrer">
                       <svg class="icon icon__page" width="20" height="20">
                         <use xlink:href="./images/sprite.svg#icon-linkedin1"></use>
@@ -297,7 +303,7 @@
       <section class="section clients">
         <div class="container">
           <h2 class="clients__title">Постійні клієнти</h2>
-          <ul class="clients__site">
+          <ul class="clients__list">
             <li class="clients__item">
               <a href="#" class="clients__link" target="_blank" rel="noopener noreferrer">
                 <svg class="icon icon__client" width="41" height="48">
@@ -419,25 +425,29 @@
               <ul class="addrres__site">
                 <li class="addrres__item">
                   <a
-                    class="addrres__map"
+                    class="address__link addrres__map"
                     href="https://www.google.com.ua/maps/place/бульвар+Лесі+Українки,+26,+Київ,+02000/@50.4264658,30.5364282,16.75z/data=!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=uk"
                     target="_blank"
                     rel="noopener noreferrer"
                     >м. Київ, пр-т Лесі Українки, 26</a
                   >
                 </li>
-                <li class="addrres__item">
-                  <a class="addrres-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <li class="addrres__item addrres__item--mail">
+                  <a class="address__link addrres-mail" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
                 </li>
                 <li class="addrres__item">
-                  <a class="addrres-numb" href="tel:+380961111111">+38 096 111 11 11</a>
+                  <a class="address__link addrres-numb" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
                 </li>
               </ul>
             </address>
           </div>
           <div class="social">
             <p class="social__title">приєднуйтесь</p>
-            <ul class="social__site">
+            <ul class="social__list">
               <li class="social__item">
                 <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
                   <svg class="icon icon__page" width="20" height="20">
@@ -479,7 +489,7 @@
                   placeholder="E-mail"
                 />
               </label>
-              <button type="submit" class="subscribe__btn">
+              <button type="submit" class="btn subscribe__btn">
                 Підписатися<svg class="icon icon__telegram" width="24" height="24">
                   <use xlink:href="./images/sprite.svg#icon-telegram"></use>
                 </svg>
