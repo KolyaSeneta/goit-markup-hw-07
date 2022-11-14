@@ -208,9 +208,19 @@ body {
     padding: 0px 40px 0px 40px;
 }
 
-.input {
+.modal__input {
     width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 11px 12px 11px 42px;
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 1.1666;
+        letter-spacing: 0.01em;
+        outline: 0;
 }
+
+
 
 .input {
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -221,16 +231,18 @@ body {
     line-height: 1.1666;
     letter-spacing: 0.01em;
     outline: 0;
+    width: 100%;
 }
 
 
-.btn-closed {
+.modal__btn-closed {
     position: absolute;
     width: 30px;
     height: 30px;
     top: 8px;
     right: 8px;
     fill: #000000;
+    cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     background-color: var(--bg-white);
@@ -239,8 +251,8 @@ body {
 
 }
 
-.btn-closed:hover .icon__btn,
-.btn-closed:focus .icon__btn {
+.modal__btn-closed:hover .icon__btn,
+.modal__btn-closed:focus .icon__btn {
     fill: var(--secondary-color);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -252,7 +264,7 @@ body {
     pointer-events: none;
 }
 
-.from-row {
+.modal__from-row {
     position: relative
 }
 
@@ -262,6 +274,7 @@ body {
     left: 12px;
     transform: translateY(-50%);
 }
+
 .input:hover+.icon-modal,
 .input:focus+.icon-modal {
     fill: var(--secondary-color);
@@ -416,7 +429,7 @@ header {
     margin: 0px;
     padding: 0px;
 }
-.btn__promo {
+.promo__btn {
     background: #2196F3;
     color: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -664,28 +677,6 @@ header {
     line-height: 1.18;
     margin: 0px;
     padding: 0px;
-}
-
-.icons__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    fill: var(--fill-svg);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icons__link:hover,
-.icons__link:focus {
-    fill: var(--bg-white);
-    background-color: var(--secondary-color);
-    border-radius: 50%;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team__item {
@@ -946,7 +937,7 @@ header {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio__link {
