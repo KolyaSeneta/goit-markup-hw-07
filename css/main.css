@@ -101,14 +101,8 @@ header {
   display: -ms-flexbox;
   display: flex;
 }
-
-.nav__link {
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  padding-top: 32px;
-  padding-bottom: 32px;
+.nav__item--emphasis {
+  position: relative;
 }
 
 .nav__item + .nav__item {
@@ -120,24 +114,14 @@ header {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  padding-top: 32px;
+  padding-bottom: 32px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.nav__link:hover,
-.nav__link:focus {
+.nav__link:hover, .nav__link:focus {
   color: var(--secondary-color);
 }
-
-.nav__link--active:active,
-.nav__link--active:visited {
-  color: var(--secondary-color);
-}
-
-.nav__item--emphasis {
-  position: relative;
-}
-
 .nav__link--emphasis::after {
   background: #2196F3;
   content: "";
@@ -180,15 +164,13 @@ header {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.feedback__link:hover, .feedback__link:focus {
+  color: var(--secondary-color);
+}
 
 .icon-phone,
 .icon-mail {
   fill: currentColor;
-}
-
-.feedback__link:hover,
-.feedback__link:focus {
-  color: var(--secondary-color);
 }
 
 .title-primary {
@@ -502,9 +484,7 @@ header {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.social-icons__link--team:hover,
-.social-icons__link--team:focus {
+.social-icons__link--team:hover, .social-icons__link--team:focus {
   fill: var(--bg-white);
   background-color: var(--secondary-color);
   border-radius: 50%;
@@ -561,9 +541,7 @@ header {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.social-icons__link:hover,
-.social-icons__link:focus {
+.social-icons__link:hover, .social-icons__link:focus {
   fill: var(--bg-white);
   background-color: var(--secondary-color);
   border-radius: 50%;
@@ -589,9 +567,7 @@ header {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.clients__link:hover,
-.clients__link:focus {
+.clients__link:hover, .clients__link:focus {
   fill: var(--secondary-color);
   border: 1px solid #2196F3;
 }
@@ -695,9 +671,7 @@ header {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal__coments:hover,
-.modal__coments:focus {
+.modal__coments:hover, .modal__coments:focus {
   border-color: var(--secondary-color);
 }
 
@@ -799,6 +773,12 @@ header {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.input:hover, .input:focus {
+  border-color: var(--secondary-color);
+}
+.input:hover + .icon-modal, .input:focus + .icon-modal {
+  fill: var(--secondary-color);
+}
 
 .modal__btn-closed {
   position: absolute;
@@ -814,15 +794,13 @@ header {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal__btn-closed:hover + .icon-btn, .modal__btn-closed:focus + .icon-btn {
+  fill: var(--secondary-color);
+}
 
 .icon__btn {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__btn-closed:hover .icon__btn,
-.modal__btn-closed:focus .icon__btn {
-  fill: var(--secondary-color);
 }
 
 .modal.is-hidden {
@@ -843,11 +821,6 @@ header {
           transform: translateY(-50%);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.input:hover + .icon-modal,
-.input:focus + .icon-modal {
-  fill: var(--secondary-color);
 }
 
 .footer {
@@ -886,11 +859,6 @@ header {
   margin-bottom: 9px;
 }
 
-.address__link:hover,
-.address__link:focus {
-  color: var(--secondary-color);
-}
-
 .address__link {
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
@@ -898,6 +866,9 @@ header {
   line-height: 1.71;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.address__link:hover, .address__link:focus {
+  color: var(--secondary-color);
 }
 
 .addrres__map {
@@ -962,9 +933,7 @@ header {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.social-icons__link--footer:hover,
-.social-icons__link--footer:focus {
+.social-icons__link--footer:hover, .social-icons__link--footer:focus {
   background-color: var(--secondary-color);
   fill: #FFFFFF;
 }
@@ -999,15 +968,13 @@ header {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.feedback__link:hover, .feedback__link:focus {
+  color: var(--secondary-color);
+}
 
 .icon-phone,
 .icon-mail {
   fill: currentColor;
-}
-
-.feedback__link:hover,
-.feedback__link:focus {
-  color: var(--secondary-color);
 }
 
 .subscribe__title {
@@ -1085,10 +1052,14 @@ header {
   padding: 0px;
   margin: 0px;
 }
-
-.portfolio__link:hover {
+.portfolio__link:hover, .portfolio__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.portfolio__link:hover .portfolio__text--label, .portfolio__link:focus .portfolio__text--label {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  overflow: auto;
 }
 
 .portfolio__label {
@@ -1138,13 +1109,6 @@ header {
   color: var(--paragraph-text-color);
   font-size: 16px;
   line-height: 2.25;
-}
-
-.portfolio__link:hover .portfolio__text--label,
-.portfolio__link:focus .portfolio__text--label {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
-  overflow: auto;
 }
 
 .portfolio {
@@ -1199,9 +1163,7 @@ header {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.buttons__filters:hover,
-.buttons__filters:focus {
+.buttons__filters:hover, .buttons__filters:focus {
   background: #2196F3;
   color: var(--text-white);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);

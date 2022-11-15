@@ -17,6 +17,11 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding-top: 32px;
         padding-bottom: 32px;
+
+        &:hover,
+        &:focus {
+                color: var(--secondary-color);
+            }
 }
 
 .icon-phone,
@@ -24,7 +29,7 @@
     fill: currentColor;
 }
 
-.feedback__link:hover,
-.feedback__link:focus {
-    color: var(--secondary-color);
-}
+// .feedback__link:hover,
+// .feedback__link:focus {
+//     color: var(--secondary-color);
+// }
