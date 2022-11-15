@@ -4,9 +4,11 @@
 }
 
 .features__title {
-    display: none;
-    margin: 0px;
-    padding: 0px;
+    font-size: 14px;
+    line-height: 1.1428;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .feauter__box {
@@ -93,4 +95,18 @@
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+}
+.features__title--hidden {
+    position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+    
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+
 }

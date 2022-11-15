@@ -6,17 +6,7 @@
     text-align: center;
 }
 
-.team__heading {
-    color: var(--primary-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
 
-    padding-bottom: 50px;
-}
 
 
 .team__list {
@@ -25,8 +15,6 @@
     justify-content: center;
     display: flex;
     gap: 30px;
-    padding-left: 200px;
-    padding-right: 200px;
 }
 
 .team__title {
