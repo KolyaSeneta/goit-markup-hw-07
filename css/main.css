@@ -385,6 +385,8 @@ header {
   line-height: 1.14;
   margin: 0px;
   padding: 0px;
+  -ms-flex-line-pack: baseline;
+      align-content: baseline;
 }
 
 .features__text {

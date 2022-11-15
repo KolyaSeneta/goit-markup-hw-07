@@ -49,6 +49,7 @@
     content: "";
     width: 270px;
     height: 120px;
+    // min-height: 120px;
     display: block;
     background-position: 50% 50%;
     background-image: url(../images/feature3.svg);
@@ -81,6 +82,7 @@
     line-height: 1.14;
     margin: 0px;
     padding: 0px;
+    align-content: baseline;
 }
 
 .features__text {
